@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&family=Tilt+Prism&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="https://use.fontawesome.com/28f229e3ea.js"></script>
+</head>
+
+<body>
+  <!-- This is the home page -->
+  <section class="all">
+    <div class="opacity">
+      <div class="navbar">
+        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="">Service</a>
+        <a href="">Portfolio</a>
+        <a href="">Blog</a>
+        <button class="btn2">Get In Touch</button>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+      <!-- <div class="icons">
+        
+      </div> -->
+      <div class="below">
+        <div class="home">
+          <h1>Felix Mulaa</h1>
+          <p id="auto-type">Hi, my name is Felix Mulaa,  welcome you to my personal portfolio.</p>
+            <h2>Objectives</h2>
+            <p>To work for a challenging company which offers professional development and growth potential as well as to further build
+            upon my academic training and experience.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- This is the homepage -->
+  
+  <!-- About me -->
+  <section class="aboutMe">
+    <div class="opacity2">
+      <h1>Skillset</h1>
+      <p>ASP.NET | JavaScript, jQuery, AJAX | Responsive Design | C# | SEO | Google Analytics | MVC | Microsoft SQL
+        Server |
+        Chrome, Firefox, Edge, IE | nopCommerce SW | Microsoft Visual Studio | Adobe Photoshop | AspDotNetStorefront SW
+        | HTML,
+        HTML5, CSS, CSS3 | Ecommerce | Engineering Management</p>
+      <h2>Web Developer</h2>
+      <p id="type">Web Developer with experience in enhancing user experience. Experienced in designing
+        for several
+        interfaces, as well as testing and debugging. Excels in optimizing the experience for users and improving
+        workflows.</p>
+        <h2>Freelance Research Assistant</h2>
+        <p>I have been a Research Assistant for a freelance writer for the past five years.I have ammassed a great deal of knowledge from the writer, which help me in writing essays and dissertations in the field of Finance and Accounting.</p>
+    </div>
+  </section>
+  <!-- About me -->
+
+  <!-- Projects -->
+  <section class="projects">
+    <div class="opacity3">
+      <p id="countdown"></p>
+      
+      <script>
+      // Set the countdown date to 60 seconds from now
+        let countdownDate = new Date().getTime() + 9000000;
+
+        // Update the countdown every second
+        let countdownInterval = setInterval(function () {
+
+          // Get the current date and time
+          let now = new Date().getTime();
+
+          // Calculate the remaining time
+          let remainingTime = countdownDate - now;
+
+          // Calculate the minutes and seconds
+          let minutes = Math.floor((remainingTime % (1000 * 60 * 60 *1000)) / (1000 * 60));
+          let seconds = Math.floor((remainingTime % (1000 * 60 * 1000)) / 1000);
+
+          // Display the countdown in a element with id="countdown"
+          document.getElementById("countdown").innerHTML = "Time left: " + minutes + "m " + seconds + "s ";
+
+          // If the countdown is finished, clear the interval and display "Time's up!"
+          if (remainingTime < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("countdown").innerHTML = "Time's up!";
+          }
+        }, 1000);
+
+      </script>
+      <h1>Projects</h1>
+      <div class="projectOne">
+        <a href="">Coming soon</a>
+        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+      </div>
+      <div class="projectTwo">
+        <a href="">Coming soon</a>
+        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+      </div>
+      <div class="projectThree">
+        <a href="">Coming soon</a>
+        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+      </div>
+      <div class="projectFour">
+        <a href="">Coming soon</a>
+        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+  <!-- Projects -->
+
+  <div id="eclipse">
+    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+  </div>
+    <script src="/JavaScript/app.js"></script>
+</body>
+</html>
